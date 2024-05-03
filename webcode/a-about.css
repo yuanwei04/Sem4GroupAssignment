@@ -1,0 +1,394 @@
+body{
+	margin:0;
+	padding:0;  /*Resetting Browser Defaults*/
+	font-family:'Lato', sans-serif;
+}
+
+
+/*menu css*/
+.menu{ 
+	background-color:#3A4D2D;
+	padding:10px;
+	font-family:'Lato', sans-serif;
+	position:sticky;  /* make it stick to the top*/
+	top: 0;
+    z-index: 999; /*appears on top of other elements*/
+}
+
+.menu img{
+	width:6%;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+#logoTitle{
+	color: white;
+	font-size: 16px;
+	margin-left: 100px;
+	position: absolute;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:flex-end;
+}
+
+li{
+	margin-right:24px;
+
+}
+
+.dropDown{
+	position:absolute;
+	display:none;
+	width:150px;
+	text-align:left;
+	
+}
+
+li:hover .dropDown{
+	display:block;
+	background-color:#3A4D2D;
+}
+
+.menu a{
+   display: inline-block;
+   width: 100px;
+   height: 55px;
+   color: White;
+   text-align: center;   
+   line-height: 55px;    
+   text-decoration: none;
+}
+
+.menu a:hover{
+	color: #8DB7CC;
+}
+
+/*About Us*/
+.AboutUs{
+	background-color:#9BCB78;
+	height:300px;
+	display:flex;
+	float:left;
+}
+
+.AboutUs1 h1{
+	color:#445935;
+	font-size:40px;
+	font-family: 'BebasNeueRegular', sans-serif;
+}
+
+.AboutUs1 p{
+	text-align:justify;
+	font-size:18px;
+	line-height:1.4;
+	letter-spacing:0.6px;
+	color:#252525;
+}
+
+.AboutUs1{
+	text-align:left;
+	width:40%;
+	padding:60px 0 0 300px;
+}
+
+.image1 {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 100px;
+    background-image: url('Img/foodbank1.jpg');
+    background-size: cover;
+    position: relative;
+    animation: appear 3s linear infinite;
+}
+
+@keyframes appear {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.AboutUs2{
+	display:flex;
+	padding:20px;	
+}
+
+.AboutUs2 h4{
+	font-size:25px;
+	color:#445935;
+	font-family: 'BebasNeueRegular', sans-serif;
+	
+}
+
+.AboutUs2 p{
+	text-align:justify;
+	font-size:20px;
+}
+
+.AboutUs3{
+	
+	float:left;
+	border:4px solid #445935;
+	border-radius:5px;
+	padding:5px;
+	margin:10px;
+	box-shadow:1px 1px 8px;
+}
+
+.AboutUs3 h4{
+	margin:12px 10px 0;
+	font-family: 'BebasNeueRegular', sans-serif;
+}
+.AboutUs3 p{
+	margin:12px;
+}
+
+
+.AboutUs5{
+	display:flex;
+	padding:0;
+}
+
+.AboutUs6{
+	background-image: url('Img/foodbank2.jpg');
+	background-size: cover;
+    position: relative;
+	width:505px;
+	height:350px;
+
+}
+
+.AboutUs7{
+	background-image: url('Img/foodbank3.jpg');
+	background-size: cover;
+    position: relative;	
+	width:505px;
+	height:350px;
+
+}
+
+.AboutUs8{
+	background-image: url('Img/foodbank4.jpg');
+	background-size: cover;
+    position: relative;	
+	width:505px;
+	height:350px;
+}
+
+.AboutUs6:hover,.AboutUs7:hover,.AboutUs8:hover{
+	
+}
+
+
+/*Term Of Sevice*/
+.TermOfService{
+	background-color:#004225;
+	padding:10px;
+	height:700px;
+}
+
+.TermOfService h2{
+	font-family: 'BebasNeueRegular', sans-serif;
+	font-size:32px;
+	padding-top:20px;
+	text-align:center;
+	color:white;
+}
+
+.TermOfService h4{
+	width:70%;
+	color:white;
+	font-size:17px;
+    margin: 0 auto;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+.TermOfService p{
+
+	color:white;
+	padding:30px 30px 30px 30px;
+	text-align:left;
+	font-size:16px;
+	line-height:1.6;
+	letter-spacing:1px;
+
+}
+
+/*Privacy Policy*/
+.PrivacyPolicy{
+	border-radius:20px;
+	height:500px;
+	width:90%;
+	box-shadow:1px 1px 5px;
+	display:flex;
+	float:left;
+    margin:100px 0 50px 70px;
+	padding:50px 10px 10px 10px;
+	animation: appear1 5s linear infinite;
+}
+
+@keyframes appear1 {
+	0% {background-color:#86B049;}
+	30% {background-color:#C8B88A;}
+	60% {background-color:#F1DDDF;}
+    80% {background-color:#C8B88A;}
+    100%{background-color:#86B049;}
+}
+
+.image2{
+	margin:60px 0 0 10px;
+	width:270px;
+
+}
+
+.PrivacyPolicy1{
+	width:80%;
+}
+.PrivacyPolicy1 h3{
+	font-size:18px;
+	line-height:1.5;
+}
+
+.PrivacyPolicy1 p{
+	font-size:16px;
+	letter-spacing:1.5px;
+}
+
+
+/*Cookie Policy*/
+.CookiePolicy{
+	background-color:#013A1A;
+	border-radius:20px;
+	display:flex;
+	float:left;
+	height:450px;
+	width:90%;
+	margin:20px 0 50px 70px;
+	padding:50px 30px 150px 30px;
+}
+
+.CookiePolicy1{
+	width:500px;
+}
+
+.CookiePolicy img{
+	margin:70px 60px 0 60px;
+	width:400px;
+	height:160px;
+}
+
+.CookiePolicy h3{
+	margin-top:10px;
+	font-size:18px;
+	line-height:1.5;
+	color:#FCD97D;
+}
+
+.CookiePolicy p{
+	font-size:16px;
+	line-height:1.5;
+	letter-spacing:0.8px;
+	color:white;
+}
+
+.CookiePolicy h4{
+	margin-top:10px;
+	font-size:15px;
+	color:#E3242B;
+}
+
+/**footer css**/
+
+.footer{
+	position:relative;
+	width:100%;
+    height:300px;
+    display:flex;
+    align-items:center;
+	flex-direction:column;
+	justify-content:flex-end;
+	background-color:#002D04;
+	padding-top:50px;
+
+}
+
+.logo{
+	text-align:center;
+	position:absolute;
+	top:0;
+
+}
+
+.logo img{
+	width:25%;
+	
+}
+
+.infos{
+	text-align:center;
+}
+
+.infos p{
+	color:white;
+	font-size:17px;
+	padding-top:5px;
+   
+}
+
+.info{
+	width:40%;
+	float:left;
+	padding:5px;
+	margin-left:10px;
+}
+/*row*/
+.row{
+	display:flex;
+}
+
+.icon img{
+    width:70px;
+    height:65px;
+}
+
+.icon{
+    float:left;
+    width:.33.33%;
+    padding:5px;
+}
+/*company*/
+.company{
+	color:white; 	
+	font-size:20px;
+	margin-bottom:20px;
+}
+
+.company a{
+	color:white;
+	font-size:20px;
+
+}
+
+hr {
+	border:1px solid white;
+}
+
+.CU:hover,
+.AU:hover,
+.TOS:hover,
+.PP:hover,
+.CP:hover {
+	color: #CC646E;
+}
+
+a{
+	text-decoration:none;
+}

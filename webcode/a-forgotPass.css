@@ -1,0 +1,87 @@
+body{
+	
+	background-color:#C7D5BD;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	font-family: 'Lato', sans-serif;
+}
+
+.forgotPwForm{
+	background-color:rgba(255,255,255,0.6);
+	backdrop-filter:blur(20px);
+	border-radius:10px;
+	width:40%;
+	margin:auto;
+	margin-top:50px;
+	padding:50px;
+	}
+
+#title{
+	color: #252525;
+	margin: 0;
+	text-align: center;
+	
+}
+
+#subtitle{
+	color: #252525;
+	margin-top: 25px;
+	text-align: center;
+	word-spacing:2.0px;
+	line-height:2.5;
+}
+
+form {
+	margin: auto;
+	width: 80%;
+	padding: 50px;
+	border-radius: 8px;
+	}
+
+input[type=text]{
+	width: 96%;
+	padding: 12px 20px;
+	margin-bottom:10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	box-sizing: border-box;
+	}
+
+#sendBtn {
+	background-color: #9BCB78;
+	color: #3A4D2D;
+	padding: 14px 50px;
+	display:block;
+	margin: auto;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	}
+	
+#sendBtn:hover {
+    background-color: #3A4D2D;
+	color: #9BCB78;
+}
+
+	
+a{
+	text-decoration:none;
+	font-size:13px;
+	display:flex;
+	justify-content:center;
+	margin-top:50px; 
+}
+
+a:hover{
+	text-decoration:underline;
+}	
+
+/*display error*/
+.error{
+	padding:0;
+	margin:0 0 10px 0;
+	color:red;
+	
+}

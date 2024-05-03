@@ -1,0 +1,174 @@
+
+body{
+	margin:0;
+	padding:0;  /*Resetting Browser Defaults*/
+	font-family:'Lato', sans-serif;
+}
+
+/* top navigation bar */
+.topnav {
+    background-color: #435934;
+  	padding:10px;
+	font-family:'Lato', sans-serif;
+	position:sticky;  /* make it stick to the top*/
+	top: 0;
+    z-index: 999; /*appears on top of other elements*/
+}
+
+.topnav img {
+    width: 6%;
+    position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+.topnav h2 {
+    color: white;
+    font-size: 24px;
+	margin-left: 100px;
+	position: absolute;
+	z-index: 999; /*appears on top of other elements*/
+    font-family: 'BebasNeueRegular', sans-serif;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.topnav li {
+	margin-right:24px;
+}
+
+.topnav li:last-child {
+    margin-right: 0;
+}
+
+.topnav a {
+   display: inline-block;
+   width: 120px;
+   height: 55px;
+   color: White;
+   text-align: center;   
+   line-height: 55px;    
+   text-decoration: none;
+}
+
+.topnav a:hover {
+    color: #8DB7CC;
+}
+
+/* Dropdown */
+.dropDown {
+	position:absolute;
+	display:none;
+	width:120px;
+	text-align:left;
+}
+
+li:hover .dropDown {
+    display: block;
+	background-color: #435934;
+}
+
+.dropDown a {
+   display: inline-block;
+   width: 120px;
+   height: 55px;
+   color: White;
+   text-align: center;   
+   line-height: 32px;    
+   text-decoration: none;
+}
+
+/*--User Details Table--*/
+.search input[type=text]{
+
+  box-sizing:border-box;
+  width:300px;
+  padding: 6px;
+  margin: 8px 0 8px 60px;
+  font-size: 17px;
+  border: none;
+  transition: width 0.4s ease-in-out;
+
+}
+
+.search input[type=text]:focus {
+  width: 800px;
+}
+
+.search{
+	background-color: #e9e9e9;
+	overflow:hidden;
+	display:flex;
+	
+}
+
+#searchBtn{
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#searchBtn:hover{
+	background: #ccc;
+}
+
+/*Table*/
+
+.viewTable{
+	cursor:pointer;
+	border-collapse: collapse; /*ensure that no space between the cell borders*/
+	border: 1px;
+    margin: 25px auto;
+    font-family: 'Lato', sans-serif;
+    min-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.viewTable th {
+    background-color:#C7D5BD;
+    color: #252525;
+    text-align: left;
+}
+
+.viewTable th,
+.viewTable td {
+    padding: 12px 45px;
+}
+
+.viewTable tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.viewTable tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.viewTable tr:last-of-type {
+    border-bottom: 2px solid #C7D5BD;
+}
+
+.viewTable tr:hover {
+    font-weight: bold;
+    color: #252525;
+}
+
+.UserDetails a{
+	
+	text-decoration: none;
+}
+
+.UserDetails a:Hover{
+	border-bottom: 1px solid;
+}
+

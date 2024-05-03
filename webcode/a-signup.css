@@ -1,0 +1,170 @@
+body{
+	margin:0;
+    background-image:url("Img/greenBG.jpg");
+    background-repeat: no-repeat;
+    background-size:110%;
+    font-family: 'Lato', sans-serif;
+}
+
+/*menu css*/
+.menu{ 
+	background-color: #3A4D2D;
+	padding:10px;
+	font-family:'Lato', sans-serif;
+	position:sticky;  /* make it stick to the top*/
+	top: 0;
+    z-index: 999; /*appears on top of other elements*/
+
+}
+
+
+.menu img{
+	width:6%;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+#logoTitle{
+	color: white;
+	font-size: 16px;
+	margin-left: 100px;
+	position: absolute;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display:flex;
+	justify-content:flex-end;
+
+}
+
+li{
+	margin-right:24px;
+}
+
+.dropDown{
+	position:absolute;
+	display:none;
+	width:150px;
+	text-align:left;
+	
+}
+
+li:hover .dropDown{
+	display:block;
+	background-color:#3A4D2D;
+}
+
+.menu a{
+   display: inline-block;
+   width: 100px;
+   height: 55px;
+   color: White;
+   text-align: center;   
+   line-height: 55px;    
+   text-decoration: none;
+}
+
+.menu a:hover{
+	color: #8DB7CC;
+}
+
+#title{
+	color: #252525;
+	margin: 0;
+	text-align: center;
+	
+}
+
+#subtitle{
+	color: #252525;
+	margin: 0;
+	text-align: center;
+	word-spacing:2.0px;
+	line-height:2.5;
+}
+/*form section*/
+
+.signUpForm{
+	background-color:rgba(255,255,255,0.6);
+	backdrop-filter:blur(20px);
+	border-radius:10px;
+	width:40%;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding:50px 50px 0;
+	}
+
+
+form {
+	padding: 50px;
+	border-radius: 8px;
+	}
+
+label {
+	display: block;
+	margin-top: 10px;
+	color:#252525;
+	}
+
+input[type=text], input[type=password] {
+	width: 96%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+	}
+		
+
+#signUpBtn {
+	background-color: #9BCB78;
+	color: #3A4D2D;
+	padding: 14px 20px;
+	margin: 8px 8px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	}
+	
+#signUpBtn:hover {
+	background-color: #8DB7CC;
+	color: white;
+	}
+
+/*login section*/
+.login{
+	text-align:center;
+	margin-top:20px;
+}
+
+.login p{
+	color:#252525;
+	font-size:13px;
+	margin:0;
+}
+	
+.login a{
+	font-size:14px;
+	text-decoration:none;
+	color:#3A4D2D;
+}
+
+.login a:hover{
+	text-decoration:underline;
+	color:#3A4D2D;
+	
+}
+/*display error*/
+.error {
+	color:red;
+	margin:0;
+	padding:0;
+}

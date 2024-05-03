@@ -1,0 +1,397 @@
+
+body{
+	margin:0;
+	padding:0;  /*Resetting Browser Defaults*/
+	font-family:'Lato', sans-serif;
+}
+
+
+/*menu css*/
+.menu{ 
+	background-color:#3A4D2D;
+	padding:10px;
+	font-family:'Lato', sans-serif;
+	position:sticky;  /* make it stick to the top*/
+	top: 0;
+    z-index: 999; /*appears on top of other elements*/
+}
+
+.menu img{
+	width:6%;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+#logoTitle{
+	color: white;
+	font-size: 16px;
+	margin-left: 100px;
+	position: absolute;
+	z-index: 999; /*appears on top of other elements*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:flex-end;
+}
+
+li{
+	margin-right:24px;
+
+}
+
+.dropDown{
+	position:absolute;
+	display:none;
+	width:150px;
+	text-align:left;
+	
+}
+
+li:hover .dropDown{
+	display:block;
+	background-color:#3A4D2D;
+}
+
+.menu a{
+   display: inline-block;
+   width: 100px;
+   height: 55px;
+   color: White;
+   text-align: center;   
+   line-height: 55px;    
+   text-decoration: none;
+}
+
+.menu a:hover{
+	color: #8DB7CC;
+}
+
+
+/*hero section css*/
+.heroImage{
+
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Img/hero.jpg");
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	display: flex;
+	height:605px;
+	justify-content: center;
+    align-items: center;
+
+
+}
+
+.heroText{
+	color:white;
+	text-align: center;
+}
+
+h1{
+	font-size:80px;
+	margin-bottom: 20px;
+	font-family: 'BebasNeueRegular', sans-serif;
+}
+
+h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-family: 'BebasNeueRegular', sans-serif;
+}
+
+h3{
+	font-size: 32px;
+	margin-bottom: 20px;
+	font-family: 'BebasNeueRegular', sans-serif;
+}
+
+#donateBtn{
+	background-color:#74995A;
+	color: white;
+	font-size:20px;
+	font-weight:bold;
+	padding: 20px 40px;
+	margin:10px 5px;
+    text-decoration: none;
+    border-radius: 25px;
+	border: none;
+    cursor:pointer;
+}
+
+#donateBtn:hover{
+	background-color:#9BCB78;
+	color:#252525;
+}
+
+#searchBtn{
+	background-color:#C7D5BD;
+	color:#3A4D2D;
+	font-size:20px;
+	font-weight:bold;
+	padding: 20px 40px;
+	margin:10px 5px;
+    text-decoration: none;
+    border-radius: 25px;
+	border: none;
+    cursor:pointer;
+}
+
+.heroImage a{
+	text-decoration:none;
+}
+
+#searchBtn:hover{
+	background-color:#9BCB78;
+	color:#252525;
+}
+
+/*who we are css*/
+.whoWeAre{
+	align-items:center;
+	text-align:center;
+	background-color:#A5D980;
+	padding:50px;
+}
+
+#title1{
+	padding:10px;
+	text-align:center;
+	color:white;
+}
+
+#para1{
+	font-family:'Lato', sans-serif;
+	font-size:20px;
+	padding:30px;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+#aboutBtn{
+	background-color:white;
+	color:#3A4D2D;
+	font-size:16px;
+	font-weight:bold;
+	padding: 16px 20px;
+    text-decoration: none;
+	border: none;
+    border-radius: 25px;
+	margin:auto;
+	cursor:pointer;
+	display:block; /*make it centered*/
+	
+}
+
+#aboutBtn:hover{
+	background-color:#8DB7CC;
+	color:white;
+	
+}
+
+.whoWeAre a{
+	text-decoration:none;
+}
+
+/*what we do css*/
+.whatWeDo{
+	font-family:'Lato', sans-serif;
+	margin-bottom:100px;
+}
+
+#title2{
+	text-align:center;
+	color:#3A4D2D;
+	margin-top:100px;
+}
+
+.services{
+	display: flex; /*apply flexbox layout*/
+
+}
+
+.content{
+	display: flex;
+	flex-wrap: wrap; /*wrapping enabled*/
+	flex: 1;   /*make the equal width of all elements*/
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #3A4D2D;
+    border-radius: 4px;
+    line-height:2.2;
+	height:540px;
+}
+
+.content img{
+	display:block;
+	width:330px;
+	height:220px;
+	border-radius:25px;
+}
+
+.content p{
+	display:none;
+}
+
+.content:hover img{
+	display:none;
+}
+
+.content:hover p{
+	display:block;
+}
+
+.content:hover{
+	color: white;
+}
+
+.content-1:hover{
+	border-color: #8DB7CC;
+	background: #8DB7CC;
+}
+
+.content-2:hover{
+	border-color: #CC646E;
+	background: #CC646E;
+}
+
+.content-3:hover{
+	border-color: #CC7F64;
+	background: #CC7F64;
+}
+
+
+
+/*foodbank section css*/
+.foodBankSection{
+	font-family:'Lato', sans-serif;
+	height:500px;
+	background-color:#C7D5BD;
+
+}
+
+.foodBankSection p {
+	text-align:center;
+	padding:50px;
+	font-size:20px;
+	line-height:2.0;
+	word-spacing:1.8px;
+}
+
+#title3{
+	text-align:center;
+	color:#3A4D2D;
+	margin-bottom:50px;
+}
+
+#discoverBtn{
+	background-color: #9BCB78;
+	color: #3A4D2D;
+	font-size:16px;
+	font-weight:bold;
+	padding: 20px 24px;
+	border: none;
+	border-radius: 28px;
+	cursor: pointer;
+	margin:auto;
+	cursor:pointer;
+	display:block; /*make it centered*/
+}	
+
+#discoverBtn:hover{
+	background-color: white;
+	color: #3A4D2D;
+}
+
+/**footer css**/
+
+.footer{
+	position:relative;
+	width:100%;
+    height:300px;
+    display:flex;
+    align-items:center;
+	flex-direction:column;
+	justify-content:flex-end;
+	background-color:#002D04;
+	padding-top:50px;
+
+}
+
+.logo{
+	text-align:center;
+	position:absolute;
+	top:0;
+
+}
+
+.logo img{
+	width:25%;
+	
+}
+
+.infos{
+	text-align:center;
+}
+
+.infos p{
+	color:white;
+	font-size:17px;
+	padding-top:5px;
+   
+}
+
+.info{
+	width:40%;
+	float:left;
+	padding:5px;
+	margin-left:10px;
+}
+/*row*/
+.row{
+	display:flex;
+}
+
+.icon img{
+    width:70px;
+    height:65px;
+}
+
+.icon{
+    float:left;
+    width:.33.33%;
+    padding:5px;
+}
+/*company*/
+.company{
+	color:white; 	
+	font-size:20px;
+	margin-bottom:20px;
+}
+
+.company a{
+	color:white;
+	font-size:20px;
+
+}
+
+hr {
+	border:1px solid white;
+}
+
+.CU:hover,
+.AU:hover,
+.TOS:hover,
+.PP:hover,
+.CP:hover {
+	color: #CC646E;
+}
+
+a{
+	text-decoration:none;
+}
